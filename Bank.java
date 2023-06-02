@@ -51,7 +51,7 @@ public class Bank {
     public boolean listCustomers(String name,boolean printTransactions){
         Branch branch=findBranch(name);
         if(branch!=null){
-            System.out.println("Customers detail for branch " + branch.getName());
+            System.out.println("Customers detail for branch " + branch.getName() + "In Australia");
             ArrayList<Customer> branchCustomers=branch.getCustomers();
             for (int i = 0; i < branchCustomers.size() ; i++) {
                 Customer customer= branchCustomers.get(i);
